@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T07:02:48.991Z",
+  "lastUpdated": "2026-08-02T08:05:24.675Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,16 +15,52 @@
       "robux": 75
     },
     {
-      "name": "Bomb",
+      "name": "Spring",
       "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
+      "beli": 60000,
+      "robux": 180
     },
     {
-      "name": "Love",
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Ice",
+      "rarity": "Elemental",
+      "beli": 350000,
+      "robux": 750
+    },
+    {
+      "name": "Dark",
+      "rarity": "Elemental",
+      "beli": 500000,
+      "robux": 950
+    },
+    {
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
+    },
+    {
+      "name": "Rubber",
       "rarity": "Natural",
-      "beli": 1300000,
-      "robux": 1700
+      "beli": 750000,
+      "robux": 1200
+    },
+    {
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
+    },
+    {
+      "name": "Phoenix",
+      "rarity": "Beast",
+      "beli": 1800000,
+      "robux": 2000
     }
   ],
   "mirage": [
@@ -47,28 +83,34 @@
       "robux": 100
     },
     {
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
+    },
+    {
       "name": "Flame",
       "rarity": "Elemental",
       "beli": 250000,
       "robux": 550
     },
     {
-      "name": "Sand",
-      "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
+      "name": "Love",
+      "rarity": "Natural",
+      "beli": 1300000,
+      "robux": 1700
     },
     {
-      "name": "Diamond",
+      "name": "Sound",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 1700000,
+      "robux": 1900
     },
     {
-      "name": "Portal",
-      "rarity": "Natural",
-      "beli": 1900000,
-      "robux": 2000
+      "name": "Yeti",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
     }
   ]
 }
