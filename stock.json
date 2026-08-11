@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T00:05:29.026Z",
+  "lastUpdated": "2026-08-11T02:05:24.098Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,16 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Rubber",
-      "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
-    },
-    {
-      "name": "T Rex",
-      "rarity": "Beast",
-      "beli": 2700000,
-      "robux": 2350
+      "name": "Gas",
+      "rarity": "Elemental",
+      "beli": 3200000,
+      "robux": 2500
     }
   ],
   "mirage": [
@@ -41,16 +35,22 @@
       "robux": 75
     },
     {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
+      "name": "Blade",
+      "rarity": "Natural",
+      "beli": 30000,
+      "robux": 100
     },
     {
-      "name": "Spike",
-      "rarity": "Natural",
-      "beli": 180000,
-      "robux": 380
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Ice",
+      "rarity": "Elemental",
+      "beli": 350000,
+      "robux": 750
     },
     {
       "name": "Sand",
@@ -59,22 +59,22 @@
       "robux": 850
     },
     {
-      "name": "Dark",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 650000,
+      "robux": 1100
     },
     {
-      "name": "Diamond",
+      "name": "Rubber",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 750000,
+      "robux": 1200
     },
     {
-      "name": "Portal",
-      "rarity": "Natural",
-      "beli": 1900000,
-      "robux": 2000
+      "name": "Lightning",
+      "rarity": null,
+      "beli": null,
+      "robux": null
     }
   ]
 }
