@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T09:02:36.276Z",
+  "lastUpdated": "2026-08-16T10:05:25.304Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -53,16 +53,16 @@
       "robux": 250
     },
     {
-      "name": "Ice",
+      "name": "Flame",
       "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
+      "beli": 250000,
+      "robux": 550
     },
     {
-      "name": "Dark",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 650000,
+      "robux": 1100
     }
   ]
 }
