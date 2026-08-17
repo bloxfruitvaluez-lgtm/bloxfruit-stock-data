@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T22:51:25.507Z",
+  "lastUpdated": "2026-08-17T00:05:25.090Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,34 +15,16 @@
       "robux": 75
     },
     {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
-      "name": "Smoke",
+      "name": "Sand",
       "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
+      "beli": 420000,
+      "robux": 850
     },
     {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
-      "name": "Diamond",
+      "name": "Ghost",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    },
-    {
-      "name": "Rubber",
-      "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
+      "beli": 940000,
+      "robux": 1275
     }
   ],
   "mirage": [
@@ -59,34 +41,46 @@
       "robux": 75
     },
     {
-      "name": "Spring",
+      "name": "Blade",
       "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
+      "beli": 30000,
+      "robux": 100
     },
     {
-      "name": "Sand",
+      "name": "Smoke",
       "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
+      "beli": 100000,
+      "robux": 250
     },
     {
-      "name": "Dark",
+      "name": "Flame",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 250000,
+      "robux": 550
     },
     {
-      "name": "Diamond",
-      "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "name": "Eagle",
+      "rarity": "Beast",
+      "beli": 550000,
+      "robux": 975
     },
     {
-      "name": "Quake",
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
+    },
+    {
+      "name": "Sound",
       "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
+      "beli": 1700000,
+      "robux": 1900
+    },
+    {
+      "name": "Control",
+      "rarity": "Natural",
+      "beli": 9000000,
+      "robux": 4000
     }
   ]
 }
