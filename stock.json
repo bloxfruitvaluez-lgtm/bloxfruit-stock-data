@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T19:36:49.341Z",
+  "lastUpdated": "2026-08-17T20:05:26.796Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,10 +15,22 @@
       "robux": 75
     },
     {
-      "name": "Ice",
+      "name": "Spring",
+      "rarity": "Natural",
+      "beli": 60000,
+      "robux": 180
+    },
+    {
+      "name": "Dark",
       "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
+      "beli": 500000,
+      "robux": 950
+    },
+    {
+      "name": "Love",
+      "rarity": "Natural",
+      "beli": 1300000,
+      "robux": 1700
     }
   ],
   "mirage": [
@@ -41,28 +53,40 @@
       "robux": 100
     },
     {
-      "name": "Spring",
+      "name": "Bomb",
       "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
+      "beli": 80000,
+      "robux": 220
     },
     {
-      "name": "Ice",
+      "name": "Flame",
       "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
+      "beli": 250000,
+      "robux": 550
     },
     {
-      "name": "Light",
+      "name": "Sand",
       "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
+      "beli": 420000,
+      "robux": 850
     },
     {
-      "name": "Magma",
-      "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
+      "name": "Diamond",
+      "rarity": "Natural",
+      "beli": 600000,
+      "robux": 1000
+    },
+    {
+      "name": "Love",
+      "rarity": "Natural",
+      "beli": 1300000,
+      "robux": 1700
+    },
+    {
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
     }
   ]
 }
