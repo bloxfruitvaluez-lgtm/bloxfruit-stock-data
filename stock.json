@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T03:10:56.262Z",
+  "lastUpdated": "2026-08-22T04:05:24.633Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,22 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Ghost",
-      "rarity": "Natural",
-      "beli": 940000,
-      "robux": 1275
-    },
-    {
-      "name": "Gravity",
-      "rarity": "Natural",
-      "beli": 2500000,
-      "robux": 2300
-    },
-    {
-      "name": "Dough",
-      "rarity": "Elemental",
-      "beli": 2800000,
-      "robux": 2400
+      "name": "Buddha",
+      "rarity": "Beast",
+      "beli": 1200000,
+      "robux": 1650
     }
   ],
   "mirage": [
@@ -53,10 +41,16 @@
       "robux": 100
     },
     {
-      "name": "Sand",
+      "name": "Smoke",
       "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
+      "beli": 100000,
+      "robux": 250
+    },
+    {
+      "name": "Spike",
+      "rarity": "Natural",
+      "beli": 180000,
+      "robux": 380
     },
     {
       "name": "Eagle",
@@ -65,16 +59,10 @@
       "robux": 975
     },
     {
-      "name": "Ghost",
+      "name": "Pain",
       "rarity": "Natural",
-      "beli": 940000,
-      "robux": 1275
-    },
-    {
-      "name": "Quake",
-      "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
+      "beli": 2300000,
+      "robux": 2200
     }
   ]
 }
