@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T19:03:51.660Z",
+  "lastUpdated": "2026-08-22T20:05:23.678Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,10 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Blade",
-      "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
     },
     {
       "name": "Flame",
@@ -27,10 +27,10 @@
       "robux": 550
     },
     {
-      "name": "Eagle",
-      "rarity": "Beast",
-      "beli": 550000,
-      "robux": 975
+      "name": "Rubber",
+      "rarity": "Natural",
+      "beli": 750000,
+      "robux": 1200
     }
   ],
   "mirage": [
@@ -53,28 +53,28 @@
       "robux": 100
     },
     {
-      "name": "Dark",
+      "name": "Spike",
+      "rarity": "Natural",
+      "beli": 180000,
+      "robux": 380
+    },
+    {
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 650000,
+      "robux": 1100
     },
     {
-      "name": "Love",
+      "name": "Rubber",
       "rarity": "Natural",
-      "beli": 1300000,
-      "robux": 1700
+      "beli": 750000,
+      "robux": 1200
     },
     {
-      "name": "Sound",
-      "rarity": "Natural",
-      "beli": 1700000,
-      "robux": 1900
-    },
-    {
-      "name": "Gravity",
-      "rarity": "Natural",
-      "beli": 2500000,
-      "robux": 2300
+      "name": "Tiger",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
     }
   ]
 }
