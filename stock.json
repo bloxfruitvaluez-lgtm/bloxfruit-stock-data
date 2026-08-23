@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T12:56:46.980Z",
+  "lastUpdated": "2026-08-23T14:05:25.900Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -71,16 +71,10 @@
       "robux": 75
     },
     {
-      "name": "Bomb",
+      "name": "Blade",
       "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
+      "beli": 30000,
+      "robux": 100
     },
     {
       "name": "Spike",
@@ -95,10 +89,16 @@
       "robux": 750
     },
     {
-      "name": "Quake",
+      "name": "Diamond",
       "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
+      "beli": 600000,
+      "robux": 1000
+    },
+    {
+      "name": "Rubber",
+      "rarity": "Natural",
+      "beli": 750000,
+      "robux": 1200
     }
   ]
 }
