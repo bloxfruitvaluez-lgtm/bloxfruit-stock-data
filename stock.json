@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T18:53:03.349Z",
+  "lastUpdated": "2026-08-24T20:05:26.042Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -21,16 +21,28 @@
       "robux": 100
     },
     {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
     },
     {
-      "name": "Pain",
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
+    },
+    {
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 2300000,
-      "robux": 2200
+      "beli": 180000,
+      "robux": 380
+    },
+    {
+      "name": "Sand",
+      "rarity": "Elemental",
+      "beli": 420000,
+      "robux": 850
     }
   ],
   "mirage": [
@@ -47,22 +59,10 @@
       "robux": 75
     },
     {
-      "name": "Blade",
-      "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
-    },
-    {
       "name": "Spring",
       "rarity": "Natural",
       "beli": 60000,
       "robux": 180
-    },
-    {
-      "name": "Bomb",
-      "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
     },
     {
       "name": "Smoke",
@@ -71,10 +71,46 @@
       "robux": 250
     },
     {
-      "name": "Ice",
+      "name": "Flame",
       "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Sand",
+      "rarity": "Elemental",
+      "beli": 420000,
+      "robux": 850
+    },
+    {
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
+    },
+    {
+      "name": "Phoenix",
+      "rarity": "Beast",
+      "beli": 1800000,
+      "robux": 2000
+    },
+    {
+      "name": "Pain",
+      "rarity": "Natural",
+      "beli": 2300000,
+      "robux": 2200
+    },
+    {
+      "name": "Spirit",
+      "rarity": "Natural",
+      "beli": 3400000,
+      "robux": 2550
+    },
+    {
+      "name": "Tiger",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
     }
   ]
 }
