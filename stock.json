@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T10:42:40.701Z",
+  "lastUpdated": "2026-08-25T12:05:26.929Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,34 +15,22 @@
       "robux": 75
     },
     {
-      "name": "Spring",
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
+      "beli": 180000,
+      "robux": 380
     },
     {
-      "name": "Bomb",
-      "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
-    },
-    {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    },
-    {
-      "name": "Buddha",
+      "name": "Eagle",
       "rarity": "Beast",
-      "beli": 1200000,
-      "robux": 1650
+      "beli": 550000,
+      "robux": 975
     },
     {
-      "name": "Blizzard",
-      "rarity": "Elemental",
-      "beli": 2400000,
-      "robux": 2250
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
     }
   ],
   "mirage": [
@@ -59,34 +47,34 @@
       "robux": 75
     },
     {
-      "name": "Blade",
+      "name": "Bomb",
       "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
+      "beli": 80000,
+      "robux": 220
     },
     {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
-      "name": "Flame",
+      "name": "Ice",
       "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
+      "beli": 350000,
+      "robux": 750
     },
     {
-      "name": "Eagle",
-      "rarity": "Beast",
-      "beli": 550000,
-      "robux": 975
+      "name": "Dark",
+      "rarity": "Elemental",
+      "beli": 500000,
+      "robux": 950
     },
     {
-      "name": "Portal",
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
+    },
+    {
+      "name": "Shadow",
       "rarity": "Natural",
-      "beli": 1900000,
-      "robux": 2000
+      "beli": 2900000,
+      "robux": 2425
     }
   ]
 }
