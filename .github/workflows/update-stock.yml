@@ -25,6 +25,8 @@ jobs:
 
       - name: Run the robot (scrape current stock)
         run: node scrape.js
+        env:
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
 
       - name: Save the updated stock.json back to GitHub
         run: |
