@@ -76,4 +76,33 @@ function parseFruitText(text, href) {
   const rarity = rarityMatch ? rarityMatch[1] : null;
 
   const beliMatch = text.match(/([\d,]+)R/);
-  const beli = beliMatch ? Number(beliMatch[1].replace(/,/g, "")) :
+  const beli = beliMatch ? Number(beliMatch[1].replace(/,/g, "")) : null;
+
+  const robuxMatch = text.match(/R\s*([\d,]+)\s*$/);
+  const robux = robuxMatch ? Number(robuxMatch[1].replace(/,/g, "")) : null;
+
+  return { name, rarity, beli, robux };
+}
+
+async function main() {
+  try {
+    if (!SCRAPERAPI_KEY) throw new Error("Missing SCRAPERAPI_KEY (check the repo secret and workflow env)");
+
+    const stock = await scrapeStock();
+
+    const output = {
+      lastUpdated: new Date().toISOString(),
+      source: TARGET_URL,
+      normal: stock.normal,
+      mirage: stock.mirage,
+    };
+
+    fs.writeFileSync("stock.json", JSON.stringify(output, null, 2));
+    console.log("stock.json updated successfully:", output);
+  } catch (err) {
+    console.error("Scrape failed:", err.message);
+    process.exit(1);
+  }
+}
+
+main();
