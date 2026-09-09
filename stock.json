@@ -88,5 +88,11 @@
       "beli": 960000,
       "robux": 1300
     }
+        {
+      "name": "T-Rex",
+      "rarity": "Mythical",
+      "beli": "2.7M",
+      "robux": "2.35K"
+    },
   ]
 }
