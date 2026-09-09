@@ -1,13 +1,14 @@
 // scrape.js
-// This little robot visits FruityBlox's stock page — routed through a
-// proxy service so the request doesn't come from GitHub's own (blocked)
-// server address — reads the current Normal + Mirage stock, and saves
-// it into stock.json. GitHub Actions runs this automatically on a
-// schedule (see .github/workflows/update-stock.yml).
+// This little robot visits FruityBlox's stock page — routed through
+// ScraperAPI's proxy so the request doesn't come from GitHub's own
+// (blocked) server address — and pulls out a clean, ready-made list of
+// current fruits that's already embedded in the page's own code. It
+// saves the result into stock.json. GitHub Actions runs this file
+// automatically on a schedule (see .github/workflows/update-stock.yml)
+// — you never need to run it yourself.
 
 const fs = require("fs");
 const axios = require("axios");
-const cheerio = require("cheerio");
 
 const TARGET_URL = "https://fruityblox.com/stock";
 const SCRAPERAPI_KEY = process.env.SCRAPERAPI_KEY;
@@ -25,63 +26,34 @@ async function scrapeStock() {
     timeout: 30000,
   });
 
-  const $ = cheerio.load(html);
+  const match = html.match(/\\?"normal\\?":(\[.*?\]),\\?"mirage\\?":(\[.*?\])\}\]/);
+  if (!match) {
+    throw new Error("Could not find the stock data block in the page — FruityBlox may have changed its layout.");
+  }
 
-  const sections = { normal: [], mirage: [] };
-  let currentSection = null;
+  const normalRaw = match[1].replace(/\\"/g, '"');
+  const mirageRaw = match[2].replace(/\\"/g, '"');
 
-  $("body")
-    .find("h1, h2, h3, h4, a")
-    .each((_, el) => {
-      const tag = $(el).prop("tagName");
+  const normal = JSON.parse(normalRaw);
+  const mirage = JSON.parse(mirageRaw);
 
-      if (tag !== "A") {
-        const heading = $(el).text().trim().toLowerCase();
-        if (heading === "normal") currentSection = "normal";
-        else if (heading === "mirage") currentSection = "mirage";
-        else currentSection = null;
-        return;
-      }
-
-      if (tag === "A" && currentSection) {
-        const href = $(el).attr("href") || "";
-        if (!href.includes("/items/")) return;
-
-        const rawText = $(el).text().trim();
-        if (!rawText) return;
-
-        const parsed = parseFruitText(rawText, href);
-        if (parsed) sections[currentSection].push(parsed);
-      }
-    });
-
-  return sections;
+  return {
+    normal: normal.map(formatFruit),
+    mirage: mirage.map(formatFruit),
+  };
 }
 
-function parseFruitText(text, href) {
-  let name = null;
-  const slug = href.split("/items/")[1];
-  if (slug) {
-    name = slug
-      .replace(/\/$/, "")
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (c) => c.toUpperCase());
+function formatFruit(f) {
+  let name = f.name || null;
+  const hyphenatedNames = { "T Rex": "T-Rex" };
+  if (name && hyphenatedNames[name]) name = hyphenatedNames[name];
 
-    const hyphenatedNames = { "T Rex": "T-Rex" };
-    if (hyphenatedNames[name]) name = hyphenatedNames[name];
-  }
-  if (!name) return null;
-
-  const rarityMatch = text.match(/(Natural|Elemental|Beast|Zoan|Logia|Paramecia)/i);
-  const rarity = rarityMatch ? rarityMatch[1] : null;
-
-  const beliMatch = text.match(/([\d,]+)R/);
-  const beli = beliMatch ? Number(beliMatch[1].replace(/,/g, "")) : null;
-
-  const robuxMatch = text.match(/R\s*([\d,]+)\s*$/);
-  const robux = robuxMatch ? Number(robuxMatch[1].replace(/,/g, "")) : null;
-
-  return { name, rarity, beli, robux };
+  return {
+    name,
+    rarity: f.type || null,
+    beli: f.price ?? null,
+    robux: f.robuxPrice ?? null,
+  };
 }
 
 async function main() {
@@ -92,17 +64,3 @@ async function main() {
 
     const output = {
       lastUpdated: new Date().toISOString(),
-      source: TARGET_URL,
-      normal: stock.normal,
-      mirage: stock.mirage,
-    };
-
-    fs.writeFileSync("stock.json", JSON.stringify(output, null, 2));
-    console.log("stock.json updated successfully:", output);
-  } catch (err) {
-    console.error("Scrape failed:", err.message);
-    process.exit(1);
-  }
-}
-
-main();
