@@ -64,3 +64,17 @@ async function main() {
 
     const output = {
       lastUpdated: new Date().toISOString(),
+      source: TARGET_URL,
+      normal: stock.normal,
+      mirage: stock.mirage,
+    };
+
+    fs.writeFileSync("stock.json", JSON.stringify(output, null, 2));
+    console.log("stock.json updated successfully:", output);
+  } catch (err) {
+    console.error("Scrape failed:", err.message);
+    process.exit(1);
+  }
+}
+
+main();
