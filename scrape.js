@@ -1,14 +1,15 @@
 // scrape.js
-// This little robot visits FruityBlox's stock page, reads the current
-// Normal + Mirage stock, and saves it into stock.json in this same folder.
-// GitHub Actions runs this file automatically on a schedule (see
-// .github/workflows/update-stock.yml) — you never need to run it yourself.
+// This little robot visits the Blox Fruits Fandom wiki's Stock page,
+// reads the current Normal + Mirage stock, and saves it into stock.json
+// in this same folder. GitHub Actions runs this file automatically on a
+// schedule (see .github/workflows/update-stock.yml) — you never need to
+// run it yourself.
 
 const fs = require("fs");
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-const SOURCE_URL = "https://fruityblox.com/stock";
+const SOURCE_URL = "https://blox-fruits.fandom.com/wiki/Stock";
 
 async function scrapeStock() {
   const { data: html } = await axios.get(SOURCE_URL, {
@@ -18,11 +19,6 @@ async function scrapeStock() {
       "Accept":
         "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
       "Accept-Language": "en-US,en;q=0.9",
-      "Referer": "https://fruityblox.com/",
-      "Sec-Fetch-Dest": "document",
-      "Sec-Fetch-Mode": "navigate",
-      "Sec-Fetch-Site": "same-origin",
-      "Upgrade-Insecure-Requests": "1",
     },
     timeout: 15000,
   });
@@ -33,53 +29,57 @@ async function scrapeStock() {
   let currentSection = null;
 
   $("body")
-    .find("h2, a")
+    .find("h1, h2, h3, h4, a")
     .each((_, el) => {
       const tag = $(el).prop("tagName");
 
-      if (tag === "H2") {
+      if (tag !== "A") {
         const heading = $(el).text().trim().toLowerCase();
-        if (heading.includes("normal")) currentSection = "normal";
-        else if (heading.includes("mirage")) currentSection = "mirage";
+        if (heading.includes("normal dealer")) currentSection = "normal";
+        else if (heading.includes("mirage dealer")) currentSection = "mirage";
+        else currentSection = null;
         return;
       }
 
       if (tag === "A" && currentSection) {
         const href = $(el).attr("href") || "";
-        if (!href.includes("/items/")) return;
+        if (!href.includes("/wiki/")) return;
+        if (href.includes(":")) return;
 
         const rawText = $(el).text().trim();
         if (!rawText) return;
 
-        const parsed = parseFruitText(rawText, href);
+        const parsed = parseFruitLink(rawText, href);
         if (parsed) sections[currentSection].push(parsed);
       }
     });
 
+  sections.normal = dedupe(sections.normal);
+  sections.mirage = dedupe(sections.mirage);
+
   return sections;
 }
 
-function parseFruitText(text, href) {
-  let name = null;
-  const slug = href.split("/items/")[1];
-  if (slug) {
-    name = slug
-      .replace(/\/$/, "")
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (c) => c.toUpperCase());
+function dedupe(list) {
+  const seen = new Set();
+  return list.filter((item) => {
+    const key = item.name.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function parseFruitLink(text, href) {
+  let name = text.replace(/\s+/g, " ").trim();
+
+  if (!name) {
+    const slug = decodeURIComponent(href.split("/wiki/")[1] || "");
+    name = slug.replace(/_/g, " ").trim();
   }
   if (!name) return null;
 
-  const rarityMatch = text.match(/(Natural|Elemental|Beast|Zoan|Logia|Paramecia)/i);
-  const rarity = rarityMatch ? rarityMatch[1] : null;
-
-  const beliMatch = text.match(/([\d,]+)R/);
-  const beli = beliMatch ? Number(beliMatch[1].replace(/,/g, "")) : null;
-
-  const robuxMatch = text.match(/R\s*([\d,]+)\s*$/);
-  const robux = robuxMatch ? Number(robuxMatch[1].replace(/,/g, "")) : null;
-
-  return { name, rarity, beli, robux };
+  return { name };
 }
 
 async function main() {
