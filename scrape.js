@@ -1,26 +1,28 @@
 // scrape.js
-// This little robot visits the Blox Fruits Fandom wiki's Stock page,
-// reads the current Normal + Mirage stock, and saves it into stock.json
-// in this same folder. GitHub Actions runs this file automatically on a
-// schedule (see .github/workflows/update-stock.yml) — you never need to
-// run it yourself.
+// This little robot visits FruityBlox's stock page — routed through a
+// proxy service so the request doesn't come from GitHub's own (blocked)
+// server address — reads the current Normal + Mirage stock, and saves
+// it into stock.json. GitHub Actions runs this automatically on a
+// schedule (see .github/workflows/update-stock.yml).
 
 const fs = require("fs");
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-const SOURCE_URL = "https://blox-fruits.fandom.com/wiki/Stock";
+const TARGET_URL = "https://fruityblox.com/stock";
+const SCRAPERAPI_KEY = process.env.SCRAPERAPI_KEY;
+
+function buildProxyUrl() {
+  const params = new URLSearchParams({
+    api_key: SCRAPERAPI_KEY,
+    url: TARGET_URL,
+  });
+  return `http://api.scraperapi.com/?${params.toString()}`;
+}
 
 async function scrapeStock() {
-  const { data: html } = await axios.get(SOURCE_URL, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-      "Accept":
-        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-      "Accept-Language": "en-US,en;q=0.9",
-    },
-    timeout: 15000,
+  const { data: html } = await axios.get(buildProxyUrl(), {
+    timeout: 30000,
   });
 
   const $ = cheerio.load(html);
@@ -35,70 +37,43 @@ async function scrapeStock() {
 
       if (tag !== "A") {
         const heading = $(el).text().trim().toLowerCase();
-        if (heading.includes("normal dealer")) currentSection = "normal";
-        else if (heading.includes("mirage dealer")) currentSection = "mirage";
+        if (heading === "normal") currentSection = "normal";
+        else if (heading === "mirage") currentSection = "mirage";
         else currentSection = null;
         return;
       }
 
       if (tag === "A" && currentSection) {
         const href = $(el).attr("href") || "";
-        if (!href.includes("/wiki/")) return;
-        if (href.includes(":")) return;
+        if (!href.includes("/items/")) return;
 
         const rawText = $(el).text().trim();
         if (!rawText) return;
 
-        const parsed = parseFruitLink(rawText, href);
+        const parsed = parseFruitText(rawText, href);
         if (parsed) sections[currentSection].push(parsed);
       }
     });
 
-  sections.normal = dedupe(sections.normal);
-  sections.mirage = dedupe(sections.mirage);
-
   return sections;
 }
 
-function dedupe(list) {
-  const seen = new Set();
-  return list.filter((item) => {
-    const key = item.name.toLowerCase();
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
+function parseFruitText(text, href) {
+  let name = null;
+  const slug = href.split("/items/")[1];
+  if (slug) {
+    name = slug
+      .replace(/\/$/, "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
 
-function parseFruitLink(text, href) {
-  let name = text.replace(/\s+/g, " ").trim();
-
-  if (!name) {
-    const slug = decodeURIComponent(href.split("/wiki/")[1] || "");
-    name = slug.replace(/_/g, " ").trim();
+    const hyphenatedNames = { "T Rex": "T-Rex" };
+    if (hyphenatedNames[name]) name = hyphenatedNames[name];
   }
   if (!name) return null;
 
-  return { name };
-}
+  const rarityMatch = text.match(/(Natural|Elemental|Beast|Zoan|Logia|Paramecia)/i);
+  const rarity = rarityMatch ? rarityMatch[1] : null;
 
-async function main() {
-  try {
-    const stock = await scrapeStock();
-
-    const output = {
-      lastUpdated: new Date().toISOString(),
-      source: SOURCE_URL,
-      normal: stock.normal,
-      mirage: stock.mirage,
-    };
-
-    fs.writeFileSync("stock.json", JSON.stringify(output, null, 2));
-    console.log("stock.json updated successfully:", output);
-  } catch (err) {
-    console.error("Scrape failed:", err.message);
-    process.exit(1);
-  }
-}
-
-main();
+  const beliMatch = text.match(/([\d,]+)R/);
+  const beli = beliMatch ? Number(beliMatch[1].replace(/,/g, "")) :
