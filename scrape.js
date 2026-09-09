@@ -23,7 +23,7 @@ function buildProxyUrl() {
 
 async function scrapeStock() {
   const { data: html } = await axios.get(buildProxyUrl(), {
-    timeout: 30000,
+    timeout: 60000,
   });
 
   const match = html.match(/\\?"normal\\?":(\[.*?\]),\\?"mirage\\?":(\[.*?\])\}\]/);
