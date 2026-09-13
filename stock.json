@@ -1,33 +1,7 @@
 {
-  "lastUpdated": "2026-09-13T04:36:58.212Z",
+  "lastUpdated": "2026-09-13T11:40:16.985Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Rubber",
-      "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
-    }
-  ],
-  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -47,10 +21,36 @@
       "robux": 100
     },
     {
-      "name": "Spring",
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Diamond",
       "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
+      "beli": 600000,
+      "robux": 1000
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
     },
     {
       "name": "Ice",
@@ -59,10 +59,16 @@
       "robux": 750
     },
     {
-      "name": "Sand",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
+      "beli": 650000,
+      "robux": 1100
+    },
+    {
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
     },
     {
       "name": "Love",
@@ -71,16 +77,10 @@
       "robux": 1700
     },
     {
-      "name": "Creation",
-      "rarity": "Natural",
-      "beli": 1400000,
-      "robux": 1750
-    },
-    {
-      "name": "Phoenix",
-      "rarity": "Beast",
-      "beli": 1800000,
-      "robux": 2000
+      "name": "Gas",
+      "rarity": "Elemental",
+      "beli": 3200000,
+      "robux": 2500
     }
   ]
 }
