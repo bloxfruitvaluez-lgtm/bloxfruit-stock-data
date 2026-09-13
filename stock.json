@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-09-13T11:40:16.985Z",
+  "lastUpdated": "2026-09-13T16:08:20.647Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    }
+  ],
+  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -21,66 +41,28 @@
       "robux": 100
     },
     {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
-    },
-    {
-      "name": "Diamond",
+      "name": "Spring",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    }
-  ],
-  "mirage": [
+      "beli": 60000,
+      "robux": 180
+    },
     {
-      "name": "Rocket",
+      "name": "Rubber",
       "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
+      "beli": 750000,
+      "robux": 1200
     },
     {
-      "name": "Spin",
+      "name": "Blizzard",
+      "rarity": "Elemental",
+      "beli": 2400000,
+      "robux": 2250
+    },
+    {
+      "name": "Gravity",
       "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Bomb",
-      "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
-    },
-    {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    },
-    {
-      "name": "Magma",
-      "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
-    },
-    {
-      "name": "Love",
-      "rarity": "Natural",
-      "beli": 1300000,
-      "robux": 1700
-    },
-    {
-      "name": "Gas",
-      "rarity": "Elemental",
-      "beli": 3200000,
-      "robux": 2500
+      "beli": 2500000,
+      "robux": 2300
     }
   ]
 }
