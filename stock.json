@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T18:42:00.276Z",
+  "lastUpdated": "2026-09-20T22:22:15.673Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,28 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Smoke",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
-    },
-    {
-      "name": "Quake",
-      "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
-    },
-    {
-      "name": "Shadow",
-      "rarity": "Natural",
-      "beli": 2900000,
-      "robux": 2425
+      "beli": 650000,
+      "robux": 1100
     }
   ],
   "mirage": [
@@ -53,46 +35,34 @@
       "robux": 75
     },
     {
-      "name": "Blade",
-      "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
-    },
-    {
       "name": "Bomb",
       "rarity": "Natural",
       "beli": 80000,
       "robux": 220
     },
     {
-      "name": "Flame",
+      "name": "Smoke",
       "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
+      "beli": 100000,
+      "robux": 250
     },
     {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
+      "name": "Eagle",
+      "rarity": "Beast",
+      "beli": 550000,
+      "robux": 975
     },
     {
-      "name": "Sand",
-      "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
-    },
-    {
-      "name": "Diamond",
+      "name": "Portal",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 1900000,
+      "robux": 2000
     },
     {
-      "name": "Quake",
-      "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
+      "name": "Dough",
+      "rarity": "Elemental",
+      "beli": 2800000,
+      "robux": 2400
     }
   ]
 }
