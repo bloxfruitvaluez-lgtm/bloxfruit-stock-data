@@ -1,27 +1,7 @@
 {
-  "lastUpdated": "2026-09-20T04:48:26.209Z",
+  "lastUpdated": "2026-09-20T11:11:54.087Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    }
-  ],
-  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -47,16 +27,10 @@
       "robux": 220
     },
     {
-      "name": "Smoke",
+      "name": "Ice",
       "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
+      "beli": 350000,
+      "robux": 750
     },
     {
       "name": "Sand",
@@ -65,10 +39,60 @@
       "robux": 850
     },
     {
-      "name": "Love",
+      "name": "Eagle",
+      "rarity": "Beast",
+      "beli": 550000,
+      "robux": 975
+    },
+    {
+      "name": "Yeti",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket",
       "rarity": "Natural",
-      "beli": 1300000,
-      "robux": 1700
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Blade",
+      "rarity": "Natural",
+      "beli": 30000,
+      "robux": 100
+    },
+    {
+      "name": "Spring",
+      "rarity": "Natural",
+      "beli": 60000,
+      "robux": 180
+    },
+    {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
+    },
+    {
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Dark",
+      "rarity": "Elemental",
+      "beli": 500000,
+      "robux": 950
     }
   ]
 }
