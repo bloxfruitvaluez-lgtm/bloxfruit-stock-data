@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T22:10:01.639Z",
+  "lastUpdated": "2026-09-30T00:05:24.317Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,16 +15,16 @@
       "robux": 75
     },
     {
-      "name": "Blade",
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
+      "beli": 180000,
+      "robux": 380
     },
     {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
+      "name": "Ghost",
+      "rarity": "Natural",
+      "beli": 940000,
+      "robux": 1275
     }
   ],
   "mirage": [
@@ -41,22 +41,22 @@
       "robux": 75
     },
     {
-      "name": "Blade",
+      "name": "Bomb",
       "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
+      "beli": 80000,
+      "robux": 220
     },
     {
-      "name": "Dark",
+      "name": "Smoke",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 100000,
+      "robux": 250
     },
     {
-      "name": "Diamond",
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 180000,
+      "robux": 380
     },
     {
       "name": "Light",
@@ -65,10 +65,16 @@
       "robux": 1100
     },
     {
-      "name": "Magma",
-      "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
+    },
+    {
+      "name": "Yeti",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
     }
   ]
 }
