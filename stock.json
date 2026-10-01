@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T23:40:38.982Z",
+  "lastUpdated": "2026-10-01T00:05:24.441Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,42 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Blade",
+      "name": "Spring",
       "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
-    },
-    {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
-      "name": "Sand",
-      "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
-    },
-    {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    }
-  ],
-  "mirage": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
+      "beli": 60000,
+      "robux": 180
     },
     {
       "name": "Smoke",
@@ -71,16 +39,60 @@
       "robux": 950
     },
     {
-      "name": "Rubber",
+      "name": "Diamond",
       "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
+      "beli": 600000,
+      "robux": 1000
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
     },
     {
-      "name": "Mammoth",
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Blade",
+      "rarity": "Natural",
+      "beli": 30000,
+      "robux": 100
+    },
+    {
+      "name": "Spring",
+      "rarity": "Natural",
+      "beli": 60000,
+      "robux": 180
+    },
+    {
+      "name": "Ice",
+      "rarity": "Elemental",
+      "beli": 350000,
+      "robux": 750
+    },
+    {
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
+    },
+    {
+      "name": "Phoenix",
       "rarity": "Beast",
-      "beli": 2700000,
-      "robux": 2350
+      "beli": 1800000,
+      "robux": 2000
+    },
+    {
+      "name": "Dough",
+      "rarity": "Elemental",
+      "beli": 2800000,
+      "robux": 2400
     }
   ]
 }
