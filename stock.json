@@ -1,51 +1,7 @@
 {
-  "lastUpdated": "2026-10-01T02:05:25.646Z",
+  "lastUpdated": "2026-10-01T04:05:25.747Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
-    },
-    {
-      "name": "Dark",
-      "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
-    },
-    {
-      "name": "Diamond",
-      "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    }
-  ],
-  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -65,16 +21,48 @@
       "robux": 100
     },
     {
-      "name": "Smoke",
+      "name": "Flame",
       "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
+      "beli": 250000,
+      "robux": 550
     },
     {
       "name": "Ice",
       "rarity": "Elemental",
       "beli": 350000,
       "robux": 750
+    },
+    {
+      "name": "Blizzard",
+      "rarity": "Elemental",
+      "beli": 2400000,
+      "robux": 2250
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
+    },
+    {
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
     },
     {
       "name": "Sand",
@@ -89,16 +77,10 @@
       "robux": 950
     },
     {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    },
-    {
-      "name": "Phoenix",
-      "rarity": "Beast",
-      "beli": 1800000,
-      "robux": 2000
+      "name": "Ghost",
+      "rarity": "Natural",
+      "beli": 940000,
+      "robux": 1275
     }
   ]
 }
