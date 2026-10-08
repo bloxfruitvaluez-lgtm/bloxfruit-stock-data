@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T06:05:26.374Z",
+  "lastUpdated": "2026-10-08T08:05:26.224Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,34 +15,28 @@
       "robux": 75
     },
     {
-      "name": "Spike",
-      "rarity": "Natural",
-      "beli": 180000,
-      "robux": 380
-    },
-    {
-      "name": "Flame",
+      "name": "Ice",
       "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
+      "beli": 350000,
+      "robux": 750
     },
     {
-      "name": "Eagle",
-      "rarity": "Beast",
-      "beli": 550000,
-      "robux": 975
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
     },
     {
-      "name": "Buddha",
-      "rarity": "Beast",
-      "beli": 1200000,
-      "robux": 1650
-    },
-    {
-      "name": "Creation",
+      "name": "Rubber",
       "rarity": "Natural",
-      "beli": 1400000,
-      "robux": 1750
+      "beli": 750000,
+      "robux": 1200
+    },
+    {
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
     }
   ],
   "mirage": [
@@ -65,34 +59,34 @@
       "robux": 100
     },
     {
-      "name": "Smoke",
+      "name": "Spring",
+      "rarity": "Natural",
+      "beli": 60000,
+      "robux": 180
+    },
+    {
+      "name": "Ice",
       "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
+      "beli": 350000,
+      "robux": 750
     },
     {
-      "name": "Dark",
+      "name": "Rubber",
+      "rarity": "Natural",
+      "beli": 750000,
+      "robux": 1200
+    },
+    {
+      "name": "Magma",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 960000,
+      "robux": 1300
     },
     {
-      "name": "Love",
+      "name": "Control",
       "rarity": "Natural",
-      "beli": 1300000,
-      "robux": 1700
-    },
-    {
-      "name": "Spider",
-      "rarity": "Natural",
-      "beli": 1500000,
-      "robux": 1800
-    },
-    {
-      "name": "Spirit",
-      "rarity": "Natural",
-      "beli": 3400000,
-      "robux": 2550
+      "beli": 9000000,
+      "robux": 4000
     }
   ]
 }
