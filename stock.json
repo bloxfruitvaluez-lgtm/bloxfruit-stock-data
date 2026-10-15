@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T21:16:15.522Z",
+  "lastUpdated": "2026-10-15T22:05:26.701Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -63,18 +63,6 @@
       "rarity": "Natural",
       "beli": 30000,
       "robux": 100
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Spider",
-      "rarity": "Natural",
-      "beli": 1500000,
-      "robux": 1800
     }
   ]
 }
