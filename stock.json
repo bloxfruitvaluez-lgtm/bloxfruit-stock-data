@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T15:49:44.726Z",
+  "lastUpdated": "2026-10-24T16:05:27.564Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,22 +15,10 @@
       "robux": 75
     },
     {
-      "name": "Blade",
-      "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
-    },
-    {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
-      "name": "Bomb",
-      "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
     },
     {
       "name": "Ice",
@@ -39,22 +27,10 @@
       "robux": 750
     },
     {
-      "name": "Ghost",
-      "rarity": "Natural",
-      "beli": 940000,
-      "robux": 1275
-    },
-    {
-      "name": "Magma",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
-    },
-    {
-      "name": "Creation",
-      "rarity": "Natural",
-      "beli": 1400000,
-      "robux": 1750
+      "beli": 650000,
+      "robux": 1100
     }
   ],
   "mirage": [
@@ -77,34 +53,28 @@
       "robux": 100
     },
     {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Diamond",
+      "name": "Bomb",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 80000,
+      "robux": 220
     },
     {
-      "name": "Spider",
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 1500000,
-      "robux": 1800
+      "beli": 180000,
+      "robux": 380
     },
     {
-      "name": "Dough",
+      "name": "Light",
       "rarity": "Elemental",
-      "beli": 2800000,
-      "robux": 2400
+      "beli": 650000,
+      "robux": 1100
     },
     {
-      "name": "Yeti",
-      "rarity": "Beast",
-      "beli": 5000000,
-      "robux": 3000
+      "name": "Love",
+      "rarity": "Natural",
+      "beli": 1300000,
+      "robux": 1700
     }
   ]
 }
