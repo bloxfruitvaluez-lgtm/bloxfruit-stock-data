@@ -1,51 +1,7 @@
 {
-  "lastUpdated": "2026-11-07T06:05:28.030Z",
+  "lastUpdated": "2026-11-07T08:05:24.895Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Smoke",
-      "rarity": "Elemental",
-      "beli": 100000,
-      "robux": 250
-    },
-    {
-      "name": "Sand",
-      "rarity": "Elemental",
-      "beli": 420000,
-      "robux": 850
-    },
-    {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    },
-    {
-      "name": "Buddha",
-      "rarity": "Beast",
-      "beli": 1200000,
-      "robux": 1650
-    },
-    {
-      "name": "Creation",
-      "rarity": "Natural",
-      "beli": 1400000,
-      "robux": 1750
-    }
-  ],
-  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -65,28 +21,60 @@
       "robux": 550
     },
     {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
       "name": "Eagle",
       "rarity": "Beast",
       "beli": 550000,
       "robux": 975
     },
     {
-      "name": "Magma",
-      "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
+      "name": "Diamond",
+      "rarity": "Natural",
+      "beli": 600000,
+      "robux": 1000
+    }
+  ],
+  "mirage": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
     },
     {
-      "name": "Portal",
+      "name": "Spin",
       "rarity": "Natural",
-      "beli": 1900000,
-      "robux": 2000
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Blade",
+      "rarity": "Natural",
+      "beli": 30000,
+      "robux": 100
+    },
+    {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
+    },
+    {
+      "name": "Spider",
+      "rarity": "Natural",
+      "beli": 1500000,
+      "robux": 1800
+    },
+    {
+      "name": "Blizzard",
+      "rarity": "Elemental",
+      "beli": 2400000,
+      "robux": 2250
+    },
+    {
+      "name": "Yeti",
+      "rarity": "Beast",
+      "beli": 5000000,
+      "robux": 3000
     }
   ]
 }
