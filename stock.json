@@ -1,7 +1,39 @@
 {
-  "lastUpdated": "2026-11-11T02:05:25.237Z",
+  "lastUpdated": "2026-11-11T04:05:25.362Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
+    },
+    {
+      "name": "Sand",
+      "rarity": "Elemental",
+      "beli": 420000,
+      "robux": 850
+    },
+    {
+      "name": "Portal",
+      "rarity": "Natural",
+      "beli": 1900000,
+      "robux": 2000
+    }
+  ],
+  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -21,72 +53,16 @@
       "robux": 100
     },
     {
-      "name": "Diamond",
-      "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    },
-    {
-      "name": "Rubber",
-      "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
-    },
-    {
-      "name": "Magma",
-      "rarity": "Elemental",
-      "beli": 960000,
-      "robux": 1300
-    },
-    {
-      "name": "Quake",
-      "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
-    }
-  ],
-  "mirage": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
-    },
-    {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
       "name": "Flame",
       "rarity": "Elemental",
       "beli": 250000,
       "robux": 550
     },
     {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
-    },
-    {
       "name": "Magma",
       "rarity": "Elemental",
       "beli": 960000,
       "robux": 1300
-    },
-    {
-      "name": "Spider",
-      "rarity": "Natural",
-      "beli": 1500000,
-      "robux": 1800
     }
   ]
 }
