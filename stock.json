@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T21:24:54.565Z",
+  "lastUpdated": "2026-11-12T22:05:29.850Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -41,28 +41,34 @@
       "robux": 75
     },
     {
-      "name": "Spring",
+      "name": "Blade",
       "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
+      "beli": 30000,
+      "robux": 100
     },
     {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
-    },
-    {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
-      "name": "Rubber",
+      "name": "Bomb",
       "rarity": "Natural",
-      "beli": 750000,
-      "robux": 1200
+      "beli": 80000,
+      "robux": 220
+    },
+    {
+      "name": "Spike",
+      "rarity": "Natural",
+      "beli": 180000,
+      "robux": 380
+    },
+    {
+      "name": "Dark",
+      "rarity": "Elemental",
+      "beli": 500000,
+      "robux": 950
+    },
+    {
+      "name": "Ghost",
+      "rarity": "Natural",
+      "beli": 940000,
+      "robux": 1275
     },
     {
       "name": "Creation",
