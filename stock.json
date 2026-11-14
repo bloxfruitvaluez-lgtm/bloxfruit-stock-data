@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T16:31:35.688Z",
+  "lastUpdated": "2026-11-14T18:05:30.735Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -63,30 +63,6 @@
       "rarity": "Natural",
       "beli": 60000,
       "robux": 180
-    },
-    {
-      "name": "Flame",
-      "rarity": "Elemental",
-      "beli": 250000,
-      "robux": 550
-    },
-    {
-      "name": "Ice",
-      "rarity": "Elemental",
-      "beli": 350000,
-      "robux": 750
-    },
-    {
-      "name": "Dark",
-      "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
-    },
-    {
-      "name": "Light",
-      "rarity": "Elemental",
-      "beli": 650000,
-      "robux": 1100
     }
   ]
 }
