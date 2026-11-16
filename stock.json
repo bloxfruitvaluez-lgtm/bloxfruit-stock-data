@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-11-16T18:05:35.420Z",
+  "lastUpdated": "2026-11-16T20:05:38.736Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
+    {
+      "name": "Rocket",
+      "rarity": "Natural",
+      "beli": 5000,
+      "robux": 50
+    },
+    {
+      "name": "Spin",
+      "rarity": "Natural",
+      "beli": 7500,
+      "robux": 75
+    },
+    {
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
+    },
+    {
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
+    }
+  ],
+  "mirage": [
     {
       "name": "Rocket",
       "rarity": "Natural",
@@ -21,30 +47,16 @@
       "robux": 100
     },
     {
+      "name": "Spring",
+      "rarity": "Natural",
+      "beli": 60000,
+      "robux": 180
+    },
+    {
       "name": "Bomb",
       "rarity": "Natural",
       "beli": 80000,
       "robux": 220
-    },
-    {
-      "name": "Dark",
-      "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
-    }
-  ],
-  "mirage": [
-    {
-      "name": "Rocket",
-      "rarity": "Natural",
-      "beli": 5000,
-      "robux": 50
-    },
-    {
-      "name": "Spin",
-      "rarity": "Natural",
-      "beli": 7500,
-      "robux": 75
     },
     {
       "name": "Flame",
@@ -53,28 +65,22 @@
       "robux": 550
     },
     {
-      "name": "Dark",
+      "name": "Magma",
       "rarity": "Elemental",
-      "beli": 500000,
-      "robux": 950
+      "beli": 960000,
+      "robux": 1300
     },
     {
-      "name": "Diamond",
-      "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    },
-    {
-      "name": "T-Rex",
+      "name": "Buddha",
       "rarity": "Beast",
-      "beli": 2700000,
-      "robux": 2350
+      "beli": 1200000,
+      "robux": 1650
     },
     {
-      "name": "Kitsune",
-      "rarity": "Beast",
-      "beli": 8000000,
-      "robux": 4000
+      "name": "Blizzard",
+      "rarity": "Elemental",
+      "beli": 2400000,
+      "robux": 2250
     }
   ]
 }
