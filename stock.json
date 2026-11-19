@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T20:26:49.688Z",
+  "lastUpdated": "2026-11-19T22:05:26.719Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -59,12 +59,6 @@
       "robux": 75
     },
     {
-      "name": "Spring",
-      "rarity": "Natural",
-      "beli": 60000,
-      "robux": 180
-    },
-    {
       "name": "Flame",
       "rarity": "Elemental",
       "beli": 250000,
@@ -77,9 +71,21 @@
       "robux": 1100
     },
     {
-      "name": "Portal",
+      "name": "Ghost",
       "rarity": "Natural",
-      "beli": 1900000,
+      "beli": 940000,
+      "robux": 1275
+    },
+    {
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
+    },
+    {
+      "name": "Phoenix",
+      "rarity": "Beast",
+      "beli": 1800000,
       "robux": 2000
     }
   ]
