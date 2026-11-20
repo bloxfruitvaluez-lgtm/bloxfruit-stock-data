@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T02:59:54.245Z",
+  "lastUpdated": "2026-11-20T04:05:32.633Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,16 +15,46 @@
       "robux": 75
     },
     {
-      "name": "Diamond",
+      "name": "Blade",
       "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
+      "beli": 30000,
+      "robux": 100
     },
     {
-      "name": "Spider",
+      "name": "Spring",
       "rarity": "Natural",
-      "beli": 1500000,
-      "robux": 1800
+      "beli": 60000,
+      "robux": 180
+    },
+    {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
+    },
+    {
+      "name": "Sand",
+      "rarity": "Elemental",
+      "beli": 420000,
+      "robux": 850
+    },
+    {
+      "name": "Dark",
+      "rarity": "Elemental",
+      "beli": 500000,
+      "robux": 950
+    },
+    {
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
+    },
+    {
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
     }
   ],
   "mirage": [
@@ -41,28 +71,22 @@
       "robux": 75
     },
     {
+      "name": "Bomb",
+      "rarity": "Natural",
+      "beli": 80000,
+      "robux": 220
+    },
+    {
       "name": "Smoke",
       "rarity": "Elemental",
       "beli": 100000,
       "robux": 250
     },
     {
-      "name": "Spike",
-      "rarity": "Natural",
-      "beli": 180000,
-      "robux": 380
-    },
-    {
-      "name": "Diamond",
-      "rarity": "Natural",
-      "beli": 600000,
-      "robux": 1000
-    },
-    {
-      "name": "Quake",
-      "rarity": "Natural",
-      "beli": 1000000,
-      "robux": 1500
+      "name": "Magma",
+      "rarity": "Elemental",
+      "beli": 960000,
+      "robux": 1300
     },
     {
       "name": "Creation",
@@ -71,10 +95,16 @@
       "robux": 1750
     },
     {
-      "name": "Tiger",
+      "name": "Phoenix",
       "rarity": "Beast",
-      "beli": 5000000,
-      "robux": 3000
+      "beli": 1800000,
+      "robux": 2000
+    },
+    {
+      "name": "T-Rex",
+      "rarity": "Beast",
+      "beli": 2700000,
+      "robux": 2350
     }
   ]
 }
