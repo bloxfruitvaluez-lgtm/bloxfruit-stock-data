@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T14:44:04.048Z",
+  "lastUpdated": "2026-11-24T16:05:34.892Z",
   "source": "https://fruityblox.com/stock",
   "normal": [
     {
@@ -15,28 +15,22 @@
       "robux": 75
     },
     {
-      "name": "Blade",
-      "rarity": "Natural",
-      "beli": 30000,
-      "robux": 100
+      "name": "Smoke",
+      "rarity": "Elemental",
+      "beli": 100000,
+      "robux": 250
+    },
+    {
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
     },
     {
       "name": "Dark",
       "rarity": "Elemental",
       "beli": 500000,
       "robux": 950
-    },
-    {
-      "name": "Creation",
-      "rarity": "Natural",
-      "beli": 1400000,
-      "robux": 1750
-    },
-    {
-      "name": "Spirit",
-      "rarity": "Natural",
-      "beli": 3400000,
-      "robux": 2550
     }
   ],
   "mirage": [
@@ -53,10 +47,28 @@
       "robux": 75
     },
     {
-      "name": "Bomb",
+      "name": "Spike",
       "rarity": "Natural",
-      "beli": 80000,
-      "robux": 220
+      "beli": 180000,
+      "robux": 380
+    },
+    {
+      "name": "Flame",
+      "rarity": "Elemental",
+      "beli": 250000,
+      "robux": 550
+    },
+    {
+      "name": "Sand",
+      "rarity": "Elemental",
+      "beli": 420000,
+      "robux": 850
+    },
+    {
+      "name": "Light",
+      "rarity": "Elemental",
+      "beli": 650000,
+      "robux": 1100
     },
     {
       "name": "Rubber",
@@ -65,10 +77,16 @@
       "robux": 1200
     },
     {
-      "name": "Kitsune",
+      "name": "Buddha",
       "rarity": "Beast",
-      "beli": 8000000,
-      "robux": 4000
+      "beli": 1200000,
+      "robux": 1650
+    },
+    {
+      "name": "Creation",
+      "rarity": "Natural",
+      "beli": 1400000,
+      "robux": 1750
     }
   ]
 }
